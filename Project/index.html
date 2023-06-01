@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.Sc Project Details</title>
+    <style>
+      h1 {
+        color: rgb(8, 64, 64);
+      }
+      a {
+        text-decoration: none;
+        color: palevioletred;
+      }
+      h2 {
+        color: blueviolet;
+      }
+      h3 {
+        color: rgb(5, 255, 5);
+      }
+      form {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: rgb(238, 196, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">
+        Government Arts And Science College - Hosur
+      </h1>
+    </header>
+    <nav style="text-align: center">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Quick Links</a>
+    </nav>
+    <h2 style="text-align: center">
+      M.Sc Computer Science 2021-2023 Batch Students Project Details
+    </h2>
+    <section>
+      <h3 style="text-align: center">Fill the Project Details</h3>
+      <form action="">
+        <label for="stu-name">Enter Student Name</label>
+        <input type="text" id="stu-name" name="stuName" />
+        <br />
+        <br />
+        <label for="reg-no">Enter Register No</label>
+        <input type="text" id="reg-no" name="stuReg" />
+        <br />
+        <br />
+        <label for="department">Select Department</label>
+        <select name="stuDep" id="department">
+          <option value="">--select--</option>
+          <option value="M.sc">M.Sc CS</option>
+          <option value="B.sc">B.Sc</option>
+        </select>
+        <br />
+        <br />
+        <label for="type">Project Type</label>
+        <input list="t" />
+        <datalist id="t">
+          <option value="Web"></option>
+          <option value="Android"></option>
+          <option value="Machine Learning"></option>
+          <option value="IoT"></option>
+          <option value="Rasberrypy"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="project-title">Enter Project Title</label>
+        <input type="text" id="project-title" name="projectName" />
+        <br />
+        <br />
+        <label for="project-guide">Enter Your Guide Name</label>
+        <input type="text" id="project-guide" name="guideName" />
+        <br />
+        <br />
+        <label for="submit-date">Select Project Submission Date</label>
+        <input type="date" name="submissionDate" id="submit-date" />
+        <br />
+        <br />
+        <label for="upload-project">Upload Complete Project File</label>
+        <input type="file" name="projectFile" id="upload-project" />
+        <br />
+        <br />
+        <button onclick="myButton()">Submit</button>
+      </form>
+    </section>
+    <script>
+      function myButton() {
+        if (window.confirm("How is My Site")) {
+          alert("Wow 😘");
+        } else {
+          alert("Poda Gomtha 🐒");
+        }
+      }
+    </script>
+  </body>
+</html>
