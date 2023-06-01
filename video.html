@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+  </head>
+  <body>
+    <video width="300" height="200" autoplay controls muted id="vid1">
+      <source
+        src="./Videos/Visual Studio Code Full Course - VS Code for Beginners.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <button onclick="playPause()">Play / Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeNormal()">Normal</button>
+
+    <script>
+      let myVideo = document.getElementById("vid1");
+      function playPause() {
+        if (myVideo.paused) {
+          myVideo.play();
+        } else {
+          myVideo.pause();
+        }
+      }
+
+      function makeBig() {
+        myVideo.width = 500;
+        myVideo.height = 500;
+      }
+
+      function makeNormal() {
+        myVideo.width = 300;
+        myVideo.height = 200;
+      }
+    </script>
+  </body>
+</html>
